@@ -13,7 +13,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Color(0xFFC8D3DC), // Background color
+        color: Color(0xFFC8D3DC), 
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
@@ -31,7 +31,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ],
             ),
-            Spacer(), // This will push the remaining widgets to the center
+            Spacer(), 
             TextField(
               controller: emailController,
               decoration: InputDecoration(
@@ -91,7 +91,7 @@ class LoginPage extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => Homepage()),
                     );
                   } else {
-                    // Show error message
+                   
                     print("Login failed");
                   }
                 },
@@ -100,7 +100,7 @@ class LoginPage extends StatelessWidget {
                   style: TextStyle(color: Colors.white),
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF0C54BE), // Blue color for button
+                  backgroundColor: Color(0xFF0C54BE), 
                 ),
               ),
             ),
@@ -120,7 +120,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
-            Spacer(), // This will push the widgets above to the center
+            Spacer(), 
           ],
         ),
       ),
@@ -138,7 +138,7 @@ class SignupPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Color(0xFFC8D3DC), // Background color
+        color: Color(0xFFC8D3DC), 
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
@@ -156,7 +156,7 @@ class SignupPage extends StatelessWidget {
                 ),
               ],
             ),
-            Spacer(), // This will push the remaining widgets to the center
+            Spacer(), 
             TextField(
               controller: nameController,
               decoration: InputDecoration(
@@ -247,7 +247,7 @@ class SignupPage extends StatelessWidget {
                   style: TextStyle(color: Colors.white),
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF0C54BE), // Blue color for button
+                  backgroundColor: Color(0xFF0C54BE), 
                 ),
               ),
             ),
@@ -264,7 +264,7 @@ class SignupPage extends StatelessWidget {
                 ),
               ),
             ),
-            Spacer(), // This will push the widgets above to the center
+            Spacer(), 
           ],
         ),
       ),
