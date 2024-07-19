@@ -18,7 +18,7 @@ class Homepage extends StatelessWidget {
         automaticallyImplyLeading: false,
       ),
       body: Container(
-        color: Color(0xFFC8D3DC), // Background color
+        color: Color(0xFFC8D3DC), 
         padding: const EdgeInsets.all(16.0),
         child: Consumer<ProductProvider>(
           builder: (context, productProvider, child) {
@@ -26,10 +26,10 @@ class Homepage extends StatelessWidget {
                 ? Center(child: CircularProgressIndicator())
                 : GridView.builder(
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2, // Number of cards per row
-                      crossAxisSpacing: 16.0, // Spacing between columns
-                      mainAxisSpacing: 16.0, // Spacing between rows
-                      childAspectRatio: 0.75, // Aspect ratio of the card
+                      crossAxisCount: 2, 
+                      crossAxisSpacing: 16.0, 
+                      mainAxisSpacing: 16.0, 
+                      childAspectRatio: 0.75, 
                     ),
                     itemCount: productProvider.products.length,
                     itemBuilder: (context, index) {
